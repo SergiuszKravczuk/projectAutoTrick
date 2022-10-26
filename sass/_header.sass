@@ -1,0 +1,123 @@
+.header
+    background-image: url("../img/headerbg.png")
+
+.header__topBar
+    display: flex
+    justify-content: space-around
+    align-items: center
+    border-bottom: 1px solid $lg-col
+    background-color: #3235397e
+
+.header__logo
+    margin: 20px 0 25px
+    img
+        transform: rotateY(180deg)
+
+.header__logo--text
+    font-size: 2.5rem
+    text-align: center
+    text-transform: uppercase
+    color: $r-col
+    font-weight: 700
+    letter-spacing: 2px
+    font-style: italic
+    line-height: 0
+    span
+        color: $lw-col
+
+.navigation
+    display: flex
+    height: 15vh
+    justify-content: space-between
+    align-items: center
+    list-style: none
+
+.navigation__btnLi
+    position: relative
+    height: 100%
+    font-size: 2rem
+    text-transform: uppercase
+    &:hover > .navigation__dropDown
+        animation: dropDownMenu .2s linear 0s 1 normal both
+        display: block
+
+.navigation__btnMain
+    display: block
+    width: 100%
+    line-height: 15vh
+    padding: 10px
+    color: $lw-col
+    letter-spacing: 1px
+    text-decoration: none
+    transition: .5s
+    &:hover
+        color: $r-col
+.fa-solid
+    padding-left: 5px
+
+.navigation__dropDown
+    display: none
+    position: absolute
+    top: 50%
+    left: 0
+    width: 20vw
+    background-color: $lw-col
+    list-style: none
+
+.navigation__dropDown--li
+    width: 100%
+    padding: 10px 15px
+    margin: 10px
+
+.navigation__dropDown--btn
+    display: block
+    width: 100%
+    color: $b-col
+    text-decoration: none
+    letter-spacing: 1px
+    text-transform: capitalize
+    &:hover
+        color: $r-col
+
+.navigation__btnMain--red
+    color: $r-col
+
+.redBtn
+    position: relative
+    min-width: 160px
+    height: 50px
+    border: 2px solid $r-col
+    background-color: $r-col
+    &:hover > .redBtn__animation
+        animation: redBtn .2s linear 0s 1 normal forwards
+
+.redBtn__animation
+    position: absolute
+    top: 0
+    left: 50%
+    width: 0%
+    opacity: 0
+    height: 100%
+    background-color: #fff
+    transform: translate(-50%)
+
+.redBtn__btn
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    cursor: pointer
+    width: 100%
+    height: 100%
+    border: none
+    background-color: transparent
+    font-family: 'Roboto', sans-serif
+    color: $w-col
+    font-size: 2rem
+    letter-spacing: 1px
+    transition: .2s
+    &:hover
+        color: $r-col
+
+.header__content
+    height: 100vh
